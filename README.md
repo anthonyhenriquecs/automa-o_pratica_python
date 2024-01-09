@@ -58,8 +58,7 @@ for item in tabela.index:
     #obs
     obs = tabela.loc[item, "obs"]
     if not pandas.isna(obs):
-        
-        pyautogui.write()
+        pyautogui.write(obs)
     pyautogui.press("tab")
     #enviar
     pyautogui.press("enter")
